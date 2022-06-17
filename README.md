@@ -1,1 +1,1 @@
-# sem-3
+# Semester 3
