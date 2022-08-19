@@ -235,4 +235,32 @@ from xml.sax.handler import property_interning_dict
 # ///////////////// Error ///////////////////////
 
 
-# ********************* Short-circuit evaluation of logical expression*********************
+# n = 4
+# while n > 2:
+#     print("Hello World")
+#     n = n+1
+
+
+# while True:
+#     line = input('>')
+#     if line == 'done':
+#         break
+#     print(line)
+#     print('Done!')
+
+# line = 'Ajmer Singh'
+# print(line)
+# print(line[0])
+
+
+# ******************** For loop in python ***************
+# friends = ['Joseph', 'Glenn', 'Sally']
+# for i in friends:
+#     print('Happy New Year:', i)
+# print('Done!')
+
+
+# count = 0
+# for itervar in [3, 4, 32, 13, 54, 23]:
+#     count = count+1
+# print('Count:', count)
