@@ -264,3 +264,20 @@ from xml.sax.handler import property_interning_dict
 # for itervar in [3, 4, 32, 13, 54, 23]:
 #     count = count+1
 # print('Count:', count)
+
+# import math as m
+# c = dir(m)
+# print(c)
+# a = m.sin(30)
+# print(a)
+
+# def print_msg():
+#     print('Line 1')
+#     print('Line 2')
+Ajay = "Pradyumn Tripathi"
+
+
+def print_twice(Ajay):
+
+    print_twice(Ajay)
+    print_twice(Ajay)
