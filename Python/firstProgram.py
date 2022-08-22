@@ -274,10 +274,86 @@ from xml.sax.handler import property_interning_dict
 # def print_msg():
 #     print('Line 1')
 #     print('Line 2')
-Ajay = "Pradyumn Tripathi"
+# Ajay = "Pradyumn Tripathi"
 
 
-def print_twice(Ajay):
+# def print_twice(Ajay):
 
-    print_twice(Ajay)
-    print_twice(Ajay)
+#     print_twice(Ajay)
+#     print_twice(Ajay)
+
+
+# letter = fruit[1]
+# print(letter)
+# print(fruit[-1])
+# print(fruit[-2])
+# print(len(fruit))
+# print(len(fruit)-1)
+
+# fruit = "banana"
+# x = len(fruit)-1
+# print(x)  # 6
+# while x >= 0:
+#     print(fruit[x])
+#     x = x-1
+
+
+# index = 0
+# fruit = 'banana'
+# while index < len(fruit):
+#     letter = fruit[index]
+#     print(letter)
+#     index = index+1
+
+
+# **************************** String Slices **************************************
+# s = 'Monty Python'
+# print(s[3:])
+# it will print till the end of the string
+# print(s[3:5])
+# 5 is not included. It will print only till the 4th index
+# print(s[3:3])
+# it will print the null value as output
+
+# s[0] = 'a'
+# print(s)
+# it will show the error as output as it will only possible in list, not in string
+
+# greeting = 'Hello World'
+# newGreeting = 'J'+greeting[1:]
+# newGreeting = 'K'+greeting[1:]
+# print(newGreeting)
+# Need more reserach on this topic and it will work though
+
+# word = 'mango is my favourite fruit'
+# count = 0
+# for char in word:
+#     if char == ' ':
+#         count = count+1
+# print(count)
+# Counting the spaces in the string
+
+# It will print the no of words
+# name = 'Ajmer Singh'
+# count = 0
+# for char in name:
+#     if char == ' ':
+#         count = count+1
+#         print(count+1, "words")
+
+
+# sentence = "list value, length, membership, operations, slices, deletion, accessing elements, list and for loops, lists parameters and nested list"
+# count = 0
+# for space in sentence:
+#     if space == ' ':
+#         count = count+1
+# print(count+1, 'words')
+
+# Very important topic
+# word = 'Hello'
+# word2 = 'Ajmer'
+# x = word == word2
+# print(x)
+# q = 'AAB'
+# w = 'AAA'
+# print(q > w)
