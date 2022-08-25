@@ -8,6 +8,7 @@ struct Node
 };
 Node *start = NULL;
 
+// Insert at the beggining
 void insertAtBeg(int d)
 {
     Node *newNode = new Node;
@@ -16,28 +17,7 @@ void insertAtBeg(int d)
     start = newNode;
 }
 
-void print()
-{
-    Node *ptr = start;
-    while (ptr != NULL)
-    {
-        cout << ptr->data << ", ";
-        ptr = ptr->next;
-    }
-}
-
-void countNodes()
-{
-    Node *ptr = start;
-    int count = 0;
-    while (ptr != NULL)
-    {
-        count++;
-        ptr = ptr->next;
-    }
-    cout << "No. of nodes are: " << count;
-}
-
+// Insert at the end
 void insertAtEnd(int d)
 {
     Node *ptr = start;
@@ -56,6 +36,31 @@ void insertAtEnd(int d)
         ptr->next = newNode;
 }
 
+// print function
+void print()
+{
+    Node *ptr = start;
+    while (ptr != NULL)
+    {
+        cout << ptr->data << ", ";
+        ptr = ptr->next;
+    }
+}
+
+// counting the nodes in the list
+void countNodes()
+{
+    Node *ptr = start;
+    int count = 0;
+    while (ptr != NULL)
+    {
+        count++;
+        ptr = ptr->next;
+    }
+    cout << "No. of nodes are: " << count;
+}
+
+// searching in the list
 void linearSearch(int d)
 {
     Node *ptr = start;
@@ -63,7 +68,7 @@ void linearSearch(int d)
     {
         if (ptr->data == d)
         {
-            cout << "Element found at ptr " << ptr;
+            cout << "Element found at ptr: " << ptr;
             break;
         }
         else

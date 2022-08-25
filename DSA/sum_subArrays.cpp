@@ -5,25 +5,26 @@ int maxSum(int sum)
 {
 }
 
-void sum_subArrays(int arr[], int n)
+int sum_subArrays(int arr[], int n)
 {
     int sum = 0;
+    int largest = 0;
+    int largestSum = 0;
     for (int i = 0; i < n; i++)
     {
         for (int j = i; j < n; j++)
         {
             for (int k = i; k < j; k++)
             {
-                cout << arr[k] << " ";
                 sum = sum + arr[k];
                 // int maxsum = maxSum(sum);
             }
             cout << endl;
-            cout << "Sum is: " << sum;
-            sum = 0;
+            largestSum = max(largest, sum);
         }
         cout << endl;
     }
+    return largestSum;
 }
 
 int main()
