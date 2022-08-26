@@ -9,18 +9,18 @@ int main()
 {
     int n;
     cin >> n;
-    int arr[n];
-    for (int i = 0; i < n; i++)
-    {
-        cin >> arr[i];
-    }
     if (n < 0 || n > 20)
     {
-        cout << "Invalid Input" << endl;
+        cout << "Invalid array size" << endl;
     }
     else
     {
+        int arr[n];
+        for (int i = 0; i < n; i++)
+        {
+            cin >> arr[i];
+            return 0;
         }
-
+    }
     return 0;
 }
