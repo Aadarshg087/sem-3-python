@@ -1,46 +1,46 @@
-#include <cmath>
-#include <cstdio>
-#include <vector>
-#include <iostream>
-#include <algorithm>
-using namespace std;
+    #include <cmath>
+    #include <cstdio>
+    #include <vector>
+    #include <iostream>
+    #include <algorithm>
+    using namespace std;
 
-void bubbleSort(int arr[], int n)
-{
-    for (int i = 0; i < n - 1; i++)
+    void bubbleSort(int arr[], int n)
     {
-
-        for (int j = 0; j < n - i - 1; j++)
+        for (int i = 0; i < n - 1; i++)
         {
-            if (arr[j] > arr[j + 1])
+
+            for (int j = 0; j < n - i - 1; j++)
             {
-                int temp = arr[j];
-                arr[j] = arr[j + 1];
-                arr[j + 1] = temp;
+                if (arr[j] > arr[j + 1])
+                {
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
             }
         }
     }
-}
 
-void printArray(int arr[], int n)
-{
-    for (int i = 0; i < n; i++)
+    void printArray(int arr[], int n)
     {
-        cout << arr[i] << " ";
-    }
-}
-
-int main()
-{
-    int n = 10;
-    int arr[n];
-    for (int i = 0; i < n; i++)
-    {
-        cin >> arr[i];
+        for (int i = 0; i < n; i++)
+        {
+            cout << arr[i] << " ";
+        }
     }
 
-    bubbleSort(arr, n);
-    printArray(arr, n);
+    int main()
+    {
+        int n = 10;
+        int arr[n];
+        for (int i = 0; i < n; i++)
+        {
+            cin >> arr[i];
+        }
 
-    return 0;
-}
+        bubbleSort(arr, n);
+        printArray(arr, n);
+
+        return 0;
+    }
