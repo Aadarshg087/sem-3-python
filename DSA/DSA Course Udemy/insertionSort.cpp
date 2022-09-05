@@ -9,7 +9,7 @@ void insertionSort(int arr[], int n)
         // element that needs to be placed in the right position
         int current = arr[i];
 
-        // comparing to element previos to the main element
+        // comparing to element previous to the main element
         int prev = i - 1;
 
         // checking the condition whether to switch the position or not
