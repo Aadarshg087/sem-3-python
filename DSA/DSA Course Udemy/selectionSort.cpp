@@ -4,7 +4,7 @@ using namespace std;
 
 void selectionSort(int arr[], int n)
 {
-    for (int position = 0; position < n - 1; position++)
+    /* for (int position = 0; position < n - 1; position++)
     {
         int current = arr[position];
         int min_position = position;
@@ -16,8 +16,32 @@ void selectionSort(int arr[], int n)
             }
         }
         swap(arr[position], arr[min_position]);
+    } */
+
+    // My own code of doing this
+    for (int current = 0; current < n - 1; current++)
+    {
+        // position where the minimum value is present
+        int minimum = current;
+
+        // finding the most minimum in thr array
+        for (int j = current + 1; j < n; j++)
+        {
+
+            // comparing every element from the minimum value
+            if (arr[j] < arr[minimum])
+            {
+
+                // updating it if any
+                minimum = j;
+            }
+        }
+
+        // after traversing through the whole array, swapping the minimum value to its right position
+        swap(arr[minimum], arr[current]);
     }
 
+    // printing the updated array
     for (int i = 0; i < n; i++)
     {
         cout << arr[i] << " ";

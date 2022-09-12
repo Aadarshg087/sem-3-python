@@ -5,10 +5,16 @@ struct Node
 {
     int data;
     Node *next;
-};
+};void insertAtBeg(int d)
+{
+    Node *newNode = new Node;
+    newNode->data = d;
+    newNode->next = start;
+    start = newNode;
+}
 Node *start = NULL;
 
-// Insert at the beggining
+// Insert at the beginning
 void insertAtBeg(int d)
 {
     Node *newNode = new Node;

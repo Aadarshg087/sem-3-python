@@ -4,6 +4,7 @@ using namespace std;
 
 void insertionSort(int arr[], int n)
 {
+    // picking the element that needs to be replaced
     for (int i = 1; i < n; i++)
     {
         // element that needs to be placed in the right position
@@ -49,13 +50,5 @@ int main()
     cout << endl;
 
     insertionSort(arr, n);
-
-    cout << endl;
-
-    for (int i = 0; i < n; i++)
-    {
-        cout << arr[i] << " ";
-    }
-
     return 0;
 }
