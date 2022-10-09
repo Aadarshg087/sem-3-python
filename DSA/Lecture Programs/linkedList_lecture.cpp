@@ -5,7 +5,8 @@ struct Node
 {
     int data;
     Node *next;
-};void insertAtBeg(int d)
+};
+void insertAtBeg(int d)
 {
     Node *newNode = new Node;
     newNode->data = d;
